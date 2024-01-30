@@ -1,0 +1,22 @@
+.my-color {
+    color: red;
+}
+
+.container {
+    background: #80bd77;
+    height: 900px;
+}
+
+.row {
+    /*height: 300px;*/
+    background: #3cdada;
+}
+
+.row div:nth-child(odd) {
+    background: bisque;
+}
+
+.row div:nth-child(event) {
+    background: #d9b5cc;
+
+}

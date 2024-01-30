@@ -12,7 +12,23 @@ public class TestController {
     @GetMapping("/")
     public String getPageHome(Model model){
         model.addAttribute("hello", "Hello Student!!");
-        return "index";
+        return "index3";
+    }
+
+
+    @GetMapping("/payment")
+    public String getPagePayment(){
+        return "payment";
+    }
+
+    @GetMapping("/delivery")
+    public String getPageDelivery(){
+        return "delivery";
+    }
+
+    @GetMapping("/login")
+    public String getPageLogin(){
+        return "login";
     }
 
 
