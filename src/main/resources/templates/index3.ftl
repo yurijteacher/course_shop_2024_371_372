@@ -3,7 +3,7 @@
 
     <h2>${hello}</h2>
 
-    <div class="row row-cols-2 row-cols-md-3 g-4">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
         <div class="col">
             <div class="card">
                 <img src="/static/images/user1.jpg" class="card-img-top" alt="user1">

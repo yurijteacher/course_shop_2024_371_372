@@ -1,0 +1,4 @@
+INSERT INTO `products` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('wr wqe qwe ', '/static/images/air.jpg', 'air 2020', '38500', '1');
+INSERT INTO `products` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('wr wqe qwe ', '/static/images/air.jpg', 'air 2021', '40000', '1');
+INSERT INTO `products` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('wr wqe qwe ', '/static/images/air.jpg', 'air 2022', '41000', '1');
+INSERT INTO `products` (`description`, `image`, `name`, `price`, `category_id`) VALUES ('wr wqe qwe ', '/static/images/air.jpg', 'air 2023', '43000', '1');
