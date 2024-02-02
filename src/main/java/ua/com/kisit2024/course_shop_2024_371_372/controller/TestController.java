@@ -26,10 +26,7 @@ public class TestController {
         return "delivery";
     }
 
-    @GetMapping("/login")
-    public String getPageLogin(){
-        return "login";
-    }
+
 
 
 }

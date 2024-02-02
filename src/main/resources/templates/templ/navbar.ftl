@@ -43,7 +43,6 @@
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
-
             <div>
                 <form method="get" action="/cart">
                     <button class="btn btn-outline-success me-2" type="submit"><i class="bi bi-cart-check-fill"></i>

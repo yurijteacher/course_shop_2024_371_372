@@ -54,4 +54,10 @@
     <form method="post" action="/deleteAllItem">
         <button class="btn btn-success" type="submit">Delete all</button>
     </form>
+
+    <form method="get" action="/login">
+        <button type="submit">Order</button>
+    </form>
+
+
 </@p.pages>
