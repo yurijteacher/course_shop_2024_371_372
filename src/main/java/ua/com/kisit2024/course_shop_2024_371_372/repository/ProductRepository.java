@@ -11,4 +11,10 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 
 //    List<Product> findAllByCategoriesAndAndBrandes(Category category, Brande brande);
 
+
+    // пошук по словам!!!
+    List<Product> findAllByNameOrderByName(String name);
+
+    // пошук по буквам!!!
+    List<Product> findAllByNameContainsIgnoreCaseOrderByName(String name);
 }

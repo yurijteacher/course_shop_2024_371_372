@@ -28,4 +28,10 @@ public class ProductHasOrder {
     private Order _order;
 
     private int quantity;
+
+    public ProductHasOrder(Product _product,  int quantity, Order _order) {
+        this._product = _product;
+        this._order = _order;
+        this.quantity = quantity;
+    }
 }

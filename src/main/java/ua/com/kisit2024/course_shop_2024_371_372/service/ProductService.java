@@ -18,4 +18,8 @@ public class ProductService {
         return productRepository.findAllByCategories(category);
     }
 
+   public List<Product> getProductsByName(String name){
+      return  productRepository.findAllByNameContainsIgnoreCaseOrderByName(name);
+   }
+
 }
