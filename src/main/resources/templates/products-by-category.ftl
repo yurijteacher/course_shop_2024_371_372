@@ -1,12 +1,17 @@
 <#import "templ/templ.ftl" as p>
 <@p.pages>
 
+    <#import "templ/pager.ftl" as c>
+
     <h2> Products by Category </h2>
+
+
+    <@c.pager url page/>
 
     <div class="row row-cols-2 row-cols-md-4 g-4">
 
-        <#if productsByCategory??>
-            <#list productsByCategory as product>
+        <#if page.content??>
+            <#list page.content as product>
                 <form action="/addToCart" method="post">
                 <div class="col">
                     <div class="card">
@@ -29,8 +34,8 @@
         </#if>
     </div>
 
-
-
-
+    <div class="pt-2">
+<#--    <@c.pager url page/>-->
+    </div>
 
 </@p.pages>

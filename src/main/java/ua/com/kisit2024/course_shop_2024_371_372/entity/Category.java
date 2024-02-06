@@ -1,12 +1,10 @@
 package ua.com.kisit2024.course_shop_2024_371_372.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.List;
+import java.util.Objects;
 
 @Setter
 @Getter
@@ -28,4 +26,16 @@ public class Category {
     @OneToMany(mappedBy = "categories")  // categories->Product
     private List<Product> productList;
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Category category)) return false;
+        return Objects.equals(getId(), category.getId());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId());
+    }
 }
